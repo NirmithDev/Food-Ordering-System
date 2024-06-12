@@ -2,7 +2,7 @@ Food Ordering System Backend Notes
 - Initialize the project add necessary modules from Spring Initializer
 - Add database connection for MYSql and add password
 - Create Model folders which will contain our table models/schema
-- Create Entities
+- Create Entities commit https://github.com/NirmithDev/Food-Ordering-System/pull/7 and https://github.com/NirmithDev/Food-Ordering-System/pull/12
 	- we add id for user and orders
 	- we add a One to Many relationships for the user orders because a user has many orders
 	- we add jsonIgnore because whenever I fetch the user I do not need this list we are isolating this because we are going to build a separate Order API to fetch all user orders
@@ -15,3 +15,9 @@ Food Ordering System Backend Notes
 	- we create the restaurant and userName object and assign ManyToOne relationships
 	- we add items as well which include which all things user has ordered in that order
 	- we add the objects for order and complete it
+	- we also create a OrderItem schema which has just the id atm 
+	- we then created the entities for IngredientCategory and Ingredients
+	- we also created Restaurant entity
+	- we also created CartItem Cart
+	- we completed previous uncompleted classes such as ContactInfomation, Order, Restaurant and so on.
+	
