@@ -1,0 +1,17 @@
+Food Ordering System Backend Notes
+- Initialize the project add necessary modules from Spring Initializer
+- Add database connection for MYSql and add password
+- Create Model folders which will contain our table models/schema
+- Create Entities
+	- we add id for user and orders
+	- we add a One to Many relationships for the user orders because a user has many orders
+	- we add jsonIgnore because whenever I fetch the user I do not need this list we are isolating this because we are going to build a separate Order API to fetch all user orders
+	- we create a dto package and add a Restaurant DTO what it is is essentially a data transfer object
+		- we add embeddable to that class
+	- we then add a list of addresses for the user class the relationship is also OneToMany
+	- create the address class with the id and all as a Entity
+		- we add this to it cascade = CascadeType.ALL, orphanRemoval = true because when we delete the user we want to remove all data related to him from the system
+	- now we are working on Order Entity
+	- we create the restaurant and userName object and assign ManyToOne relationships
+	- we add items as well which include which all things user has ordered in that order
+	- we add the objects for order and complete it
