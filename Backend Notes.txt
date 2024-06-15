@@ -61,7 +61,11 @@ Food Ordering System Backend Notes
 	- We first built authresponse *this class is what we will use to generate our authentication responses 
 	- we then create our AuthController class 
 		- where we create our createUserHandler function which will be responsible for checking if it is a new user with a new email and we will then generate our jwt Token get his/her roles save the details using userRepository and cartRepository
-		- 
+		- we create our signin function which takes username and password via LoginRequest where we extract the data
+		- we then authenticate and verify the user actually exists in our db
+		- we then add a collection to it and then upload it
+		- we then fix it up add the jwt token for validated user and send the responseEntity response
+		
 
 
 
