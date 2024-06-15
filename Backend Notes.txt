@@ -48,5 +48,32 @@ Food Ordering System Backend Notes
 	- if not found throw error
 	- else get roles and add his authority to the granted Authority list
 	- we then retun the user (spring security) output with user credentials
+- we are now going to create the login and registration controller
+	- we create a AuthController class and add request mapping to it
+- we need to create JwtProvider
+	- 2 method one to generate token and second to get email from the token
+	 - to generate token
+		- we first get roles and authorities and populate roles with the populateAuthorities function
+			- we join the roles once we get them all in populateAuthorities
+		- we then create our jwt string format with a expiration date and the 2 claims email and roles
+	- to get the email we follow the same process as before using claims and jwt parseBuilder and extracting the emails
+-  We are now building our AuthController for login and registration
+	- We first built authresponse *this class is what we will use to generate our authentication responses 
+	- we then create our AuthController class 
+		- where we create our createUserHandler function which will be responsible for checking if it is a new user with a new email and we will then generate our jwt Token get his/her roles save the details using userRepository and cartRepository
+		- 
 
-	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
