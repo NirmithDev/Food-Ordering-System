@@ -20,4 +20,28 @@ Food Ordering System Backend Notes
 	- we also created Restaurant entity
 	- we also created CartItem Cart
 	- we completed previous uncompleted classes such as ContactInfomation, Order, Restaurant and so on.
-	
+- Once the models were completed we added the configuration for the Spring Security
+	- What we did was create a package and a file name AppConfig
+	- in there we enabled security checks for authenticating based on roles provided to the users
+	- we have 3 requestMatchers
+		- first one is only for admin and owners
+		- second one is for authentiated users only i.e. we need to provide a token 
+		- last is let anyone do whatever request they want
+	- we add these lines
+		.addFilterBefore(new JwtTokenValidator(), BasicAuthenticationFilter.class)
+                .csrf(csrf->csrf.disable())
+                .cors(cors->cors.configurationSource(corsConfigurationSource()));
+	- to add filter for Jwt and cors and disable csrf
+	- we then implement the method for corsConfigurationSource
+		- what it essentially contains is allowed methods, urls, requests, authentication tokens
+	- we also create a password encoder 
+		- the reason for it is when we create a new user we do not want to store a direct password into db we want to encrypt it and store it for security
+	- we create the JwtTokenValidator class and use the default suggested 
+	- we add the required dependencies to our pom.xml
+	- we then create our JwtConstant class
+		- we want to add a header and key which will be used for creating and validating jwt token
+		- we check if it is valid token
+		- if it is we need to extract the authorities and email for that specific user token
+- we now still notice it auto generates security password and we want to prevent it from doing so
+	- to do so we create service and a file called CustomerUserDetailsService
+	 
