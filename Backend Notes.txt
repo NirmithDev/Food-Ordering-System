@@ -65,8 +65,11 @@ Food Ordering System Backend Notes
 		- we then authenticate and verify the user actually exists in our db
 		- we then add a collection to it and then upload it
 		- we then fix it up add the jwt token for validated user and send the responseEntity response
-		
-
+		- we are now testing the request with postman
+- we added a home controller but it was only for testing purposes to view why postman refused access
+- we created our UserController class for our users profile functionality
+- we created User Services to find User by JwtToken and find user by email
+- 
 
 
 
