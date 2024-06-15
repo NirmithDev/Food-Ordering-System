@@ -43,5 +43,10 @@ Food Ordering System Backend Notes
 		- we check if it is valid token
 		- if it is we need to extract the authorities and email for that specific user token
 - we now still notice it auto generates security password and we want to prevent it from doing so
-	- to do so we create service and a file called CustomerUserDetailsService
+	- to do so we create service and a file called CustomerUserDetailsService	
+	- in here we try to find the user email based on username 
+	- if not found throw error
+	- else get roles and add his authority to the granted Authority list
+	- we then retun the user (spring security) output with user credentials
+
 	 
