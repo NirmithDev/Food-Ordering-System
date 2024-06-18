@@ -69,7 +69,10 @@ Food Ordering System Backend Notes
 - we added a home controller but it was only for testing purposes to view why postman refused access
 - we created our UserController class for our users profile functionality
 - we created User Services to find User by JwtToken and find user by email
-- 
+- we created our CreateRestaurant Request which will recieve all this data from frontend
+- we then create Restaurant Service and its methods 
+- we create Restaurant Repository
+	- 
 
 
 
