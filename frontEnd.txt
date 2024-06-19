@@ -1,0 +1,4 @@
+- Installed and set up react, add tailwind css configuration and material ui for reusable code syntax and design
+- Create NavBar componenet
+- Badge is what we use for the number over the carts
+- IconButton is to make those icons have a button like effect
