@@ -2,3 +2,6 @@
 - Create NavBar componenet
 - Badge is what we use for the number over the carts
 - IconButton is to make those icons have a button like effect
+- add Landing Section
+- add carousel function that incorpoates slick carousel 
+- we also have a temporary collection of data for topMeal
