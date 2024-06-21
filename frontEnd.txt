@@ -5,3 +5,4 @@
 - add Landing Section
 - add carousel function that incorpoates slick carousel 
 - we also have a temporary collection of data for topMeal
+- we added restaurant card and added top recommended restaurants and their options
