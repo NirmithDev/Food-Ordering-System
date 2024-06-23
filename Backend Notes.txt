@@ -72,18 +72,6 @@ Food Ordering System Backend Notes
 - we created our CreateRestaurant Request which will recieve all this data from frontend
 - we then create Restaurant Service and its methods 
 - we create Restaurant Repository
-	- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	- Here we created the search function to find restaurants that match a search
+- we then create an implementation for the restaurant service 
+	- atm it is just to create a restaurant with parameters such as CreateRestaurantRequest and all we do is just send all details required when building the restaurant
