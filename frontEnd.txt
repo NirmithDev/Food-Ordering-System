@@ -9,3 +9,8 @@
 - we added a new section for restaurant details which helps us view the details for each restaurant 
 	- we disabled the home page for now since we do not have react routing set up atm
 	- we created grids to help create sections for viewing pictures
+	- we added divider section to just break the page up and limit it
+	- we added new categories and type filters 
+	- we created new Menu Card as well which will separate the sections out to show the tierator data
+	- we added few arrays or list just for temporary data fields
+	- we added accordion and other forms field like checkbox from material ui
