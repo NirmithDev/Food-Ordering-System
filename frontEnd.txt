@@ -14,3 +14,8 @@
 	- we created new Menu Card as well which will separate the sections out to show the tierator data
 	- we added few arrays or list just for temporary data fields
 	- we added accordion and other forms field like checkbox from material ui
+- we create cart component to store items
+	- we have multiple sections called CartItems (this is just items in cart
+	- cart calls this component and adds in Bill
+	- cart also has addressSection
+	- 
