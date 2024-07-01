@@ -13,8 +13,9 @@ public interface RestaurantService {
     public void deleteRestaurant(Long restaurantId) throws Exception;
     //only admin can get all the restaurants
     public List<Restaurant> getAllRestaurants();
-    public List<Restaurant> searchRestaurant();
+    public List<Restaurant> searchRestaurant(String keyWord);
     public Restaurant findRestaurantById(Long id) throws Exception;
+    public Restaurant getRestaurantByUserId(Long userId) throws Exception;
     public RestaurantDto addToFavorites(Long restaurantId, User user) throws Exception;
     public Restaurant updateRestaurantStatus(Long id) throws Exception;
 }
