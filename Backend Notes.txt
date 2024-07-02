@@ -75,3 +75,6 @@ Food Ordering System Backend Notes
 	- Here we created the search function to find restaurants that match a search
 - we then create an implementation for the restaurant service 
 	- atm it is just to create a restaurant with parameters such as CreateRestaurantRequest and all we do is just send all details required when building the restaurant
+	- we implement the rest of restaurant api methods based on their requirements such as updateRestaurant, deleteRestaurant, getAllRestaurants, searchRestaurant, findRestaurantById, getRestaurantByUserId, addToFavorites, updateRestaurantStatus
+		- we use optional type to give us the additional features of allowing both null and not null to be passed back
+	
