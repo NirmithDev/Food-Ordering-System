@@ -77,4 +77,11 @@ Food Ordering System Backend Notes
 	- atm it is just to create a restaurant with parameters such as CreateRestaurantRequest and all we do is just send all details required when building the restaurant
 	- we implement the rest of restaurant api methods based on their requirements such as updateRestaurant, deleteRestaurant, getAllRestaurants, searchRestaurant, findRestaurantById, getRestaurantByUserId, addToFavorites, updateRestaurantStatus
 		- we use optional type to give us the additional features of allowing both null and not null to be passed back
-	
+
+- we implement controller classes for Restaurant
+	- we create 2 one for the admin panel
+		- we create the methods that the restaurant admin will have control over
+		- we also create a message response just to help our delete function
+		- we also create a method to findRestaurantByUserId
+	-the other will be for normal user services
+		- such as implementation for adding to favorites as well as searching the restaurants
